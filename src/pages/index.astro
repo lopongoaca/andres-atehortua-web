@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "@fontsource-variable/inter";
+import "@fontsource-variable/montserrat";
 ---
 
 <Layout title="Andrés Atehortua [Personal Website]">
@@ -126,8 +126,11 @@ import "@fontsource-variable/inter";
 		</div>
 	</div>
 	<style>
+		:root {
+			font-family: "Montserrat Variable", sans-serif;
+		}
 		.wrapper {
-			height: 100vh;
+			height: 100svh;
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
@@ -135,7 +138,6 @@ import "@fontsource-variable/inter";
 			align-items: center;
 			perspective: 1000px;
 			position: relative;
-			font-family: "Montserrat";
 		}
 
 		.card {
