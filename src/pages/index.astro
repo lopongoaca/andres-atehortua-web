@@ -3,6 +3,29 @@ import Layout from "../layouts/Layout.astro";
 import "@fontsource-variable/montserrat";
 ---
 
+<script>
+	var elemento = document.querySelector(".card");
+	function toggleClass() {
+		elemento.classList.toggle("flipped");
+	}
+
+	// Verifica si el dispositivo es móvil
+	function isMobileDevice() {
+		return (
+			typeof window.orientation !== "undefined" ||
+			navigator.userAgent.indexOf("IEMobile") !== -1
+		);
+	}
+
+	if (isMobileDevice()) {
+		elemento.addEventListener("click", toggleClass);
+	} else {
+		console.log("No es un dispositivo móvil");
+		elemento.addEventListener("mouseover", toggleClass);
+		elemento.addEventListener("mouseout", toggleClass);
+	}
+</script>
+
 <Layout title="Andrés Atehortua [Personal Website]">
 	<div class="wrapper">
 		<div class="card">
@@ -21,7 +44,7 @@ import "@fontsource-variable/montserrat";
 					<h2>A.K.A. lopongoaca</h2>
 					<div class="bio">
 						<p>
-							Innovador, Líder en Tecnología<br /> Transformando ideas
+							Innovador, Líder en Tecnología.<br /> Transformando ideas
 							en soluciones digitales avanzadas y sostenibles.
 						</p>
 						<ul>
@@ -241,7 +264,7 @@ import "@fontsource-variable/montserrat";
 			}
 		}
 
-		.card:hover {
+		.card.flipped {
 			transform: rotateY(-180deg);
 		}
 		form {
