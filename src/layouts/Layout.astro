@@ -34,14 +34,31 @@ const { title } = Astro.props;
 				a.appendChild(r);
 			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 		</script>
-		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="Innovador, Líder en Tecnología. Transformando ideas en soluciones digitales avanzadas y sostenibles."
-		/>
+		<meta charset="UTF-8" />		
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
+
+
+		<!-- HTML Meta Tags -->
+		<meta name="description" content="Innovador, Líder en Tecnología. Transformando ideas en soluciones digitales avanzadas y sostenibles.">
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://andresatehortua.com/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Andrés Atehortua [Personal Website]">
+		<meta property="og:description" content="Innovador, Líder en Tecnología. Transformando ideas en soluciones digitales avanzadas y sostenibles.">
+		<meta property="og:image" content="./share.png">
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="andresatehortua.com">
+		<meta property="twitter:url" content="https://andresatehortua.com/">
+		<meta name="twitter:title" content="Andrés Atehortua [Personal Website]">
+		<meta name="twitter:description" content="Innovador, Líder en Tecnología. Transformando ideas en soluciones digitales avanzadas y sostenibles.">
+		<meta name="twitter:image" content="./share.png">
+
 		<title>{title}</title>		
 	</head>
 	<body>
