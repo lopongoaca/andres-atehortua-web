@@ -23,6 +23,17 @@ const { title } = Astro.props;
 
 			gtag("config", "G-8HVYJFELEQ");
 		</script>
+		<!-- Hotjar Tracking Code for Andres Atehortua [Personal Page] -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:3833214,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
@@ -31,28 +42,7 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<!-- Hotjar Tracking Code for Dalias Website -->
-		<script>
-			(function (h, o, t, j, a, r) {
-				h.hj =
-					h.hj ||
-					function () {
-						(h.hj.q = h.hj.q || []).push(arguments);
-					};
-				h._hjSettings = { hjid: 3625081, hjsv: 6 };
-				a = o.getElementsByTagName("head")[0];
-				r = o.createElement("script");
-				r.async = 1;
-				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-				a.appendChild(r);
-			})(
-				window,
-				document,
-				"https://static.hotjar.com/c/hotjar-",
-				".js?sv=",
-			);
-		</script>
+		<title>{title}</title>		
 	</head>
 	<body>
 		<div class="fixed min-h-dvh w-full bg-slate-950">
