@@ -3,7 +3,12 @@ const { title, link } = Astro.props;
 ---
 
 <li>
-    <a href={link} class="hover:text-slate-400" title={title} target="_blank">
+    <a
+        href={link}
+        class="hover:text-slate-400 transition-all duration-700"
+        title={title}
+        target="_blank"
+    >
         <slot />
     </a>
 </li>
